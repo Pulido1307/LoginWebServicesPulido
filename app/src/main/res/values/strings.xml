@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LoginWebServicesPulido</string>
+    <string name="inicio_de_sesi_n">Inicio de sesión</string>
+    <string name="nombre_de_usuario">Nombre de usuario</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="iniciar_sesi_n">Iniciar sesión</string>
+    <string name="no_tienes_cuenta_reg_strate">¿No tienes cuenta? Regístrate</string>
+    <string name="todo">TODO</string>
+    <string name="inicio_de_sesi_n_exitosa">¡Inicio de sesión exitoso!</string>
+    <string name="id_del_usuario">Id del usuario:</string>
+    <string name="bienvenido">¡Bienvenido!</string>
+    <string name="nombre">Nombre:</string>
+    <string name="n">N.º</string>
+    <string name="tipo">Tipo:</string>
+</resources>
