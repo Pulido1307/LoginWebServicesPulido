@@ -1,14 +1,21 @@
 package com.polar.industries.loginwebservicespulido
 
+import android.Manifest
+import android.app.AlertDialog
+import android.content.DialogInterface
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.os.AsyncTask
 import android.os.Bundle
+import android.provider.Settings
 import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import com.beust.klaxon.JsonObject
 import com.beust.klaxon.Parser
 import com.google.android.material.textfield.TextInputLayout
@@ -50,7 +57,9 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
     }
+
 
     fun disableView(view: View, isDisabled: Boolean) {
         if (isDisabled) {
@@ -78,7 +87,6 @@ class MainActivity : AppCompatActivity() {
         //Antes de ejecutar
         override fun onPreExecute() {
             super.onPreExecute()
-            Toast.makeText(applicationContext, "Todo está blanco", Toast.LENGTH_SHORT).show()
             disableView(buttonIniciarSesión!!, true)
             disableView(buttonIniciarSesión!!, true)
             disableView(textInputLayoutPassword!!, true)
@@ -201,4 +209,7 @@ class MainActivity : AppCompatActivity() {
             progressBar!!.visibility = View.INVISIBLE
         }
     }
+
+
+
 }
